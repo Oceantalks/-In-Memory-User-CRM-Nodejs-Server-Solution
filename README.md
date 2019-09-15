@@ -29,6 +29,12 @@ A simple server to handle the beloved "user".
   "birth_year": ...
   }
 
+- POST: `/auth`
+  Authenticate yourself with your newly created user to reach the following http endpoints down below. Example request body object: {
+  "username": "...",
+  "password":"..."
+  }
+
 - GET: `/users/<unix_timestamp>`
   Get all user with password_last_modified timestamp > passed in value in seconds
 
